@@ -5,7 +5,7 @@ Dolphin
 Android: 3 Dots At Top Left-> Install Wad
 Windows/Linux/Ios?/Mac: youll have to find a tutorial for that
 --- how to find wads
-i recommend [MarioCube](https://mariocube.com/), but there is some github repo with wads
+i recommend [MarioCube](https://mariocube.com/), but there is some github repo with wads (i dont have any links)
 
 
 have fun modding wads :3
