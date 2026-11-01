@@ -1,7 +1,7 @@
 # Wad Maker
 a light, wii wad editor for browsers!
 --- how to install the wad
-![Dolphin](dolphin.png)
+Dolphin
 Android: 3 Dots At Top Left-> Install Wad
 Windows/Linux/Ios?/Mac: youll have to find a tutorial for that
 --- how to find wads
