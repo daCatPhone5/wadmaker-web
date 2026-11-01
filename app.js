@@ -1,4 +1,5 @@
-const state = {
+// code for the wad maker itself
+  const state = {
   wadBytes: null,
   originalFileName: '',
   assetList: [],
