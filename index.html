@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WAD Maker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Wii WAD editor</p>
+          <h1>WAD Maker</h1>
+        </div>
+        <label class="primary-button file-input-label">
+          <input id="wadInput" type="file" accept=".wad,.WAD" />
+          Open WAD
+        </label>
+      </header>
+
+      <main class="layout">
+        <aside class="panel left-panel">
+          <section>
+            <h2>Project</h2>
+            <dl class="meta-list">
+              <div>
+                <dt>File</dt>
+                <dd id="fileName">None loaded</dd>
+              </div>
+              <div>
+                <dt>Size</dt>
+                <dd id="fileSize">-</dd>
+              </div>
+              <div>
+                <dt>WAD magic</dt>
+                <dd id="wadMagic">-</dd>
+              </div>
+              <div>
+                <dt>Title ID</dt>
+                <dd id="titleId">-</dd>
+              </div>
+            </dl>
+          </section>
+
+          <section>
+            <h2>Embedded assets</h2>
+            <div id="assetList" class="asset-list empty-state">
+              No WAD loaded yet.
+            </div>
+          </section>
+        </aside>
+
+        <section class="panel workspace-panel">
+          <div class="workspace-header">
+            <div>
+              <p class="eyebrow">Preview</p>
+              <h2>Icon preview</h2>
+            </div>
+            <label class="secondary-button file-input-label">
+              <input id="iconInput" type="file" accept="image/png,.png" />
+              Replace icon
+            </label>
+          </div>
+
+          <div class="image-stage">
+            <img id="previewImage" alt="WAD icon preview" draggable="false" />
+            <div id="previewEmpty" class="preview-empty">Load a WAD to preview its icon.</div>
+          </div>
+
+          <div class="toolbar">
+            <button id="exportButton" class="primary-button" type="button" disabled>
+              Export as WAD
+            </button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
